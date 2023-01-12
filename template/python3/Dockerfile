@@ -32,7 +32,7 @@ RUN mkdir -p function
 RUN touch ./function/__init__.py
 
 WORKDIR /home/app/function/
-COPY function/requirements.txt	.
+COPY function/*	.
 
 RUN pip install -r requirements.txt --target=/home/app/python
 
